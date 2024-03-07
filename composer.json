@@ -25,7 +25,7 @@
                 "Embit88\\MetaHelper\\Providers\\MetaHelperServiceProvider"
             ],
             "aliases": {
-                "MultiLanguage": "Embit88\\MetaHelper\\Services\\Facades\\MetaHelperFacade"
+                "MetaHelper": "Embit88\\MetaHelper\\Services\\Facades\\MetaHelperFacade"
             }
         }
     }
