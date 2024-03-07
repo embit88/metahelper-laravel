@@ -1,0 +1,32 @@
+{
+    "name": "embit88/metahelper-laravel",
+    "description": "Meta Helper laravel",
+    "type": "library",
+    "minimum-stability": "stable",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Embit88",
+            "email": "fyshtey@gmail.com",
+            "homepage": "https://github.com/embit88"
+        }
+    ],
+    "require": {
+        "php": "^8.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Embit88\\MetaHelper\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Embit88\\MetaHelper\\Providers\\MetaHelperServiceProvider"
+            ],
+            "aliases": {
+                "MultiLanguage": "Embit88\\MetaHelper\\Services\\Facades\\MetaHelperFacade"
+            }
+        }
+    }
+}
