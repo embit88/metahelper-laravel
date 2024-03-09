@@ -54,5 +54,5 @@
 
 #### SEO TEXT:
 
-- SeoHelper::setSeoText($seo_text) - Set seo text ("<~%s~>" - replace flag)
-- SeoHelper::getSeoText($replace = '') - Get seo text ("<~%s~>" >>> var $replace)
+- SeoHelper::setSeoText($seo_text) - Set seo text ("<\~%s\~>" - replace flag)
+- SeoHelper::getSeoText($replace = '') - Get seo text ("<\~%s\~>" >>> var $replace)
