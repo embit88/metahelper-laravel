@@ -1,6 +1,6 @@
 {
-    "name": "embit88/metahelper-laravel",
-    "description": "Meta Helper laravel",
+    "name": "embit88/seohelper-laravel",
+    "description": "Seo Helper laravel",
     "type": "library",
     "minimum-stability": "stable",
     "license": "MIT",
@@ -16,16 +16,16 @@
     },
     "autoload": {
         "psr-4": {
-            "Embit88\\MetaHelper\\": "src"
+            "Embit88\\SeoHelper\\": "src"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Embit88\\MetaHelper\\Providers\\MetaHelperServiceProvider"
+                "Embit88\\SeoHelper\\Providers\\SeoHelperServiceProvider"
             ],
             "aliases": {
-                "MetaHelper": "Embit88\\MetaHelper\\Services\\Facades\\MetaHelperFacade"
+                "SeoHelper": "Embit88\\SeoHelper\\Services\\Facades\\SeoHelperFacade"
             }
         }
     }

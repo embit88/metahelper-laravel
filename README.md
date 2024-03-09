@@ -6,27 +6,54 @@
 
 ### Installation:
 
-- composer require embit88/metahelper-laravel
+- composer require embit88/seohelper-laravel
 
-- use MetaHelper;
+- use SeoHelper;
 
-#### Set meta:
+#### META TAG:
 
-- MetaHelper::setTitle($string) - Set Meta Title
+- SeoHelper::setTitle($title) - Set Meta Title
 
-- MetaHelper::setDescription($string) - Set Meta Description
+- SeoHelper::setDescription($description) - Set Meta Description
 
-- MetaHelper::setKeyword($string) - Set Meta Keyword
+- SeoHelper::setKeyword($keyword) - Set Meta Keyword
 
-- MetaHelper::setMeta($title, $description, $keyword = null) - Set All Meta
+- SeoHelper::setMeta($title, $description, $keyword = null) - Set All Meta
 
-#### Get meta:
+- SeoHelper::getTitle() - Get Meta Title
 
-- MetaHelper::getTitle() - Get Meta Title
+- SeoHelper::getDescription() - Get Meta Description
 
-- MetaHelper::getDescription() - Get Meta Description
+- SeoHelper::getKeyword() - Get Meta Keyword
 
-- MetaHelper::getKeyword() - Get Meta Keyword
+- SeoHelper::getMeta($key) - Get Meta $key
 
-- MetaHelper::getMeta($key) - Get Meta $key
+#### ROBOTS:
 
+- SeoHelper::setRobots($key) - Set Robots
+
+- SeoHelper::getRobots($key) - Get Robots
+
+#### SOCIAL META:
+
+- SeoHelper::setSocialMeta($type = 'website' $image = null) - Set Social Meta
+
+- SeoHelper::getSocialMeta() - Get Social Meta HTML
+
+#### BREADCRUMB:
+
+- SeoHelper::setBreadcrumb($title, $href) - Set Breadcrumb
+
+- SeoHelper::getBreadcrumb() - Get Breadcrumb
+
+#### LINK LANGUAGES:
+
+- SeoHelper::setLinkLang($href, $hreflang) - Set Link languages
+
+- SeoHelper::getLinkLang() - Get Link languages
+
+#### SEO TEXT:
+
+- SeoHelper::setSeoText($seo_text) - Set seo text (<~%s~> - replace flag)
+
+- SeoHelper::getSeoText($replace = '') - Get seo text (str_replace flag this <~%s~> on this var $replace)

@@ -1,14 +1,14 @@
 <?php
 
-namespace Embit88\MetaHelper\Services\Facades;
+namespace Embit88\SeoHelper\Services\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
-class MetaHelperFacade extends Facade
+class SeoHelperFacade extends Facade
 {
      protected static function getFacadeAccessor(): string
      {
-         return 'metahelper';
+         return 'seohelper';
      }
 
 }
